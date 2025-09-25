@@ -25,11 +25,10 @@ project01-simple-card/
 ## 🚀 How to Run the Projects
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/<your-username>/jesi-software-engineering-journey.git
    ```
-
-````
 
 2. Navigate into this folder:
 
@@ -64,4 +63,3 @@ _(I’ll keep adding to this list as I complete more projects.)_
 ---
 
 ✨ These projects represent my step-by-step growth in front-end development.
-````
