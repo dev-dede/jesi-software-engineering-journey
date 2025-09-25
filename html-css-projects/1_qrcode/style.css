@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: azure;
+  width: 340px;
+  height: 520px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  /* border: solid; */
+}
+
+.container img {
+  margin: 0;
+  max-width: 100%; /* The image doesn't overflow it's container width */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 18px;
+}
+
+.container h2 {
+  font-size: 22px;
+  color: hsl(218, 45%, 22%);
+}
+.container p {
+  font-size: 14px;
+  color: hsl(220, 15%, 55%);
+  line-height: 1.5;
+}
