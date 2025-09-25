@@ -1,13 +1,3 @@
-Got it 👍 — since your `html-css-projects/` directory is the **hub for all your design practice projects**, the `README.md` there should explain:
-
-1. What the folder is about
-2. How the projects are structured
-3. How someone can view/run them
-4. A table/list of your projects (updated as you go)
-
-Here’s a clean and professional **`README.md`** template for your `html-css-projects/` directory:
-
-```markdown
 # HTML & CSS Projects
 
 This folder contains my practice projects from the **Jesi Software Engineering Scholarship**.  
@@ -24,22 +14,21 @@ Each project focuses on building layouts and components with **HTML & CSS**, sta
   - `README.md` → description, screenshot, and notes
 
 Example:
-```
-
 project01-simple-card/
 │── index.html
 │── style.css
 │── assets/
 └── README.md
 
-````
-
 ---
 
 ## 🚀 How to Run the Projects
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/<your-username>/jesi-software-engineering-journey.git
+   ```
+
 ````
 
 2. Navigate into this folder:
@@ -75,3 +64,4 @@ _(I’ll keep adding to this list as I complete more projects.)_
 ---
 
 ✨ These projects represent my step-by-step growth in front-end development.
+````
