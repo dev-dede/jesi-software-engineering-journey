@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1a2d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #15273f;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px black;
+  width: 100%; /* take full width of container */
+  max-width: 350px; /* but don't stretch too wide especially on bigger screens */
+  min-height: 400px; /* ensures it doesn't collapse too small */
+}
+
+.img-wrapper{
+  position: relative; /* overlay should stick to this wrapper not the whole page*/
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute; /* sit on top of it's container */
+  inset: 0; /* shorthand for top/right/bottom/left: 0 */
+  background: rgba(0, 164, 189, 0.5); /* semi-transparent blue */
+  display: flex; /* use flexbox to center img icon */
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* start invisible,only visible on hover */
+  /* transition: opacity 0.3s ease;  Shows how fast the hover should take effect*/
+}
+
+.overlay img {
+  width: 40px;
+  height: 40px;
+}
+
+.img-wrapper:hover .overlay {
+  opacity: 1; /* show overlay when hovered */
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1:hover{
+  color: #00a4bd;
+  cursor: pointer;
+}
+
+p{
+  color: #8ea5c5;
+  line-height: 30px;
+  font-size: 19px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.line img{
+  height: 20px;
+}
+
+.line .left-text{
+  color:  #00a4bd;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.line .right-text {
+  color: #8ea5c5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  border-color: hsl(215, 51%, 70%);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.author img{
+  height: 40px;
+}
+
+p span{
+  color: white;
+}
+
+p span:hover {
+  color:#00a4bd;
+  cursor: pointer;
+}
