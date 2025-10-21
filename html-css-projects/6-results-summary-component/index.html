@@ -3,69 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Results Summary</title>
+    <title>Results Summary Component</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="result">
+        <!-- Result Section -->
+        <section class="result">
           <h1>Your Result</h1>
           <div class="score">
-            <p><span>76</span> of 100</p>
+            <span>76</span>
+            <p>of 100</p>
           </div>
-          <p>Great</p>
-          <p>You scored higher than 65% of the people who took these tests</p>
-        </div>
+          <h2>Great</h2>
+          <p class="description">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
 
-        <div class="summary">
+        <!-- Summary Section -->
+        <section class="summary">
           <h2>Summary</h2>
           <div class="results-list">
-            <div class="reaction list">
+            <div class="list reaction">
               <div class="left">
-                <img src="assets/images/icon-reaction.svg" alt="" />
+                <img src="assets/images/icon-reaction.svg" alt="Reaction" />
                 <h3>Reaction</h3>
               </div>
-              <div class="right">
-                <p><span>80 </span> / 100</p>
-              </div>
+              <p><span>80</span> / 100</p>
             </div>
 
-            <div class="memory list">
+            <div class="list memory">
               <div class="left">
-                <img src="assets/images/icon-memory.svg" alt="" />
+                <img src="assets/images/icon-memory.svg" alt="Memory" />
                 <h3>Memory</h3>
               </div>
-              <div class="right">
-                <p><span>92 </span> / 100</p>
-              </div>
+              <p><span>92</span> / 100</p>
             </div>
 
-            <div class="verbal list">
+            <div class="list verbal">
               <div class="left">
-                <img src="assets/images/icon-verbal.svg" alt="" />
+                <img src="assets/images/icon-verbal.svg" alt="Verbal" />
                 <h3>Verbal</h3>
               </div>
-              <div class="right">
-                <p><span>61 </span> / 100</p>
-              </div>
+              <p><span>61</span> / 100</p>
             </div>
 
-            <div class="visual list">
+            <div class="list visual">
               <div class="left">
-                <img src="assets/images/icon-visual.svg" alt="" />
+                <img src="assets/images/icon-visual.svg" alt="Visual" />
                 <h3>Visual</h3>
               </div>
-              <div class="right">
-                <p><span>73 </span>/ 100</p>
-              </div>
+              <p><span>73</span> / 100</p>
             </div>
 
-            <div class="button">
-              <button>Continue</button>
-            </div>
+            <button>Continue</button>
           </div>
-        </div>
+        </section>
       </div>
     </main>
   </body>
