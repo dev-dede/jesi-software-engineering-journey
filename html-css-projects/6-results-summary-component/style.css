@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  /* font-size: 18px; */
+}
+
+main {
+  background-color: hsl(241, 100%, 89%);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  width: 700px;
+  height: auto;
+}
+
+.result {
+  /* width: 350px;
+  height: 350px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: hsl(252, 100%, 67%);
+  color: white;
+  flex-basis: 50%;
+}
+
+.result .score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: hsl(241, 81%, 54%);
+    width: 100px;
+    height: 100px;
+}
+
+.summary {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  flex-basis: 50%;
+  flex-direction: column;
+
+  h2 {
+    margin: 30px;
+    margin-bottom: 0;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+
+    span {
+      color: black;
+      font-weight: 800;
+    }
+
+    .right p {
+      color: #ababad;
+    }
+
+    .left {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+.reaction {
+  h3 {
+    color: hsl(0, 100%, 67%);
+  }
+  background-color: #fff6f7;
+}
+
+.memory {
+  h3 {
+    color: hsl(39, 100%, 56%);
+  }
+  background-color: #fffaf4;
+}
+
+.verbal {
+  h3 {
+    color: hsl(166, 100%, 37%);
+  }
+  background-color: #f2fdf9;
+}
+
+.visual {
+  h3 {
+    color: hsl(234, 85%, 45%);
+  }
+  background-color: #f4f4fe;
+}
+
+button {
+  display: flex;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 60px;
+  margin: 30px;
+  border-radius: 40px;
+  font-size: large;
+}
