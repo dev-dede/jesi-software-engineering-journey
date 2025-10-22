@@ -3,27 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Clipboard landing page</title>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header_logo">
-        <img src="images/logo.svg" alt="clipboard logo" />
-      </div>
-      <div class="heading">
-        <h1>A history of everything you copy</h1>
-        <p>
-          Clipboard allows you to track and organize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
+    <header>
+      <img src="images/logo.svg" alt="clipboard logo" />
+    </header>
+
+    <main class="container">
+      <section class="hero container">
+        <div class="heading container">
+          <h1>A history of everything you copy</h1>
+          <p>
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+        </div>
         <div class="ctas">
           <button class="cta ios">Download for iOS</button>
           <button class="cta mac">Download for Mac</button>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <main>
       <section class="importance">
         <div class="heading">
           <h2>Keep track of your snippets</h2>
@@ -34,33 +36,39 @@
           </p>
         </div>
         <div class="content">
-          <img src="images/image-computer.png" alt="computer" />
-          <ul class="descriptions">
-            <li class="description">
-              <h3>Quick Search</h3>
-              <p>
-                Easily search your snippets by content, category, web address,
-                application, and more.
-              </p>
-            </li>
-            <li class="description">
-              <h3>iCloud Sync</h3>
-              <p>Instantly saves and syncs snippets across all your devices.</p>
-            </li>
-            <li class="description">
-              <h3>Complete History</h3>
-              <p>
-                Retrieve any snippets from the first moment you started using
-                the app.
-              </p>
-            </li>
-          </ul>
+          <div class="computer">
+            <img src="images/image-computer.png" alt="computer" />
+          </div>
+          <div class="descriptions">
+            <ul class="description-list">
+              <li class="description">
+                <h3>Quick Search</h3>
+                <p>
+                  Easily search your snippets by content, category, web address,
+                  application, and more.
+                </p>
+              </li>
+              <li class="description">
+                <h3>iCloud Sync</h3>
+                <p>
+                  Instantly saves and syncs snippets across all your devices.
+                </p>
+              </li>
+              <li class="description">
+                <h3>Complete History</h3>
+                <p>
+                  Retrieve any snippets from the first moment you started using
+                  the app.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="anywhere">
+      <section class="anywhere container">
         <div class="heading">
-          <h2>Access Clipboard anywhere</h2>
+          <h2>Access Clipboard Anywhere</h2>
           <p>
             Whether you’re on the go, or at your computer, you can access all
             your Clipboard snippets in a few simple clicks.
@@ -71,7 +79,7 @@
         </div>
       </section>
 
-      <section class="tools">
+      <section class="tools container">
         <div class="heading">
           <h2>Supercharge your workflow</h2>
           <p>We’ve got the tools to boost your productivity.</p>
@@ -130,7 +138,7 @@
     </main>
 
     <footer>
-      <img src="images/logo.svg" alt="logo" />
+      <img src="images/logo.svg" alt="logo" class="logo" />
 
       <ul class="links">
         <li><a href="#">FAQs</a></li>
