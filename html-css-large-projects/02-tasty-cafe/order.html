@@ -25,6 +25,78 @@
       </div>
     </nav>
 
+    <section class="order container">
+      <div class="heading">
+        <img src="images/icons/bag.png" />
+        <h2>Place Your Order</h2>
+        <p>Fill in your details and we'll deliver to your doorstep</p>
+      </div>
+
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="John Doe" required />
+
+        <div class="contact">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="john@example.com"
+            required
+          />
+
+          <label for="number">Phone Number</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="+123456789"
+            required
+          />
+        </div>
+
+        <div class="food-form">
+          <label for="food">Select Item</label>
+          <input
+            type=""
+            id="food"
+            name="food"
+            placeholder="Select a food item"
+            required
+          />
+
+          <label for="quantity">Select quantity</label>
+          <input
+            type=""
+            id="quantity"
+            name="quantity"
+            placeholder="+123456789"
+            required
+          />
+        </div>
+
+        <label for="adress">Delivery Address</label>
+        <textarea
+          id="address"
+          name="address"
+          rows="4"
+          placeholder="123 Main Street, Apt 4B, City, State, Zip"
+          required
+        ></textarea>
+
+        <label for="instructions">Special Instructions (Optional)</label>
+        <textarea
+          id="instructions"
+          name="instructions"
+          rows="4"
+          placeholder="Any dietary or special requests..."
+        ></textarea>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+
     <footer>
       <div class="socials">
         <img src="./images/icons/icons8-facebook-logo-50.png" />

@@ -1,0 +1,32 @@
+.order{
+    margin-top: 150px;
+
+    img {
+        background-color: #f97415;
+        padding: 20px;
+        border-radius: 50%;
+        width: 100px;
+    }
+
+    h2{
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-weight: 400;
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-color: white;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
