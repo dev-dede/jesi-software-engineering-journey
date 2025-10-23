@@ -161,15 +161,42 @@ P {
   }
 }
 
-.search-bar{
+.search-bar {
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
   width: 50%;
-  padding: 10px 10px;
+  padding: 12px;
   border-radius: 35px;
+  overflow: hidden;
+  gap: 10px;
+
+  input {
+    outline: none;
+    border: none;
+    flex: 1;
+    font-size: 1.44rem;
+  }
+
+  button{
+    background-color: #f97415;
+    border: none;
+    transition: color 0.3s ease;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    img{
+      width: 26px;
+    }
+  }
+
+  button:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+    background-color: #f07218;
+  }
 }
 
 /* Explore section starts here */
