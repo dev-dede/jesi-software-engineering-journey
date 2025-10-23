@@ -260,6 +260,10 @@ P {
 }
 
 /* Menu section starts here */
+.menu {
+  max-width: 100%;
+}
+
 .menu .foods {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -276,17 +280,10 @@ P {
   margin-bottom: 20px;
   border-radius: 30px;
   background-color: white;
-  /* transition: transform ease-out 0.2s; */
 
   img {
-    /* margin-bottom: 20px; */
     border-radius: 30px 30px 0 0;
-    /* transition: transform 0.2s ease-out; */
-  }
-
-  :hover img {
-    /* cursor: pointer; */
-    /* transform: scale(1.0008) translateY(-4px); */
+    transition: transform 0.2s ease-out;
   }
 
   .description {
@@ -341,6 +338,11 @@ P {
     background-color: #f07218;
     transform: scale(1.04);
   }
+}
+
+.menu .food:hover img {
+  cursor: pointer;
+  transform: scale(1.004) translateY(-4px);
 }
 
 /* Footer section starts here */
