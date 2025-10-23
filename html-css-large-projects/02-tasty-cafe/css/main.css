@@ -261,7 +261,7 @@ P {
 
 /* Menu section starts here */
 .menu {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .menu .foods {
@@ -269,11 +269,11 @@ P {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .menu .food {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -284,7 +284,7 @@ P {
   img {
     border-radius: 30px 30px 0 0;
     transition: transform 0.2s ease-out;
-    width: 400px;
+    width: 100%;
   }
 
   .description {
