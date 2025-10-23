@@ -269,11 +269,11 @@ P {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 20px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .menu .food {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
