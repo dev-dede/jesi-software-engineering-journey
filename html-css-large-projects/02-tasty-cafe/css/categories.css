@@ -1,4 +1,8 @@
 /* categories section starts here */
+.categories {
+  margin-top: 150px;
+}
+
 .categories .foods {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
