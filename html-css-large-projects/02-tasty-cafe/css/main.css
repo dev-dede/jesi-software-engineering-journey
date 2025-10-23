@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #fbfaf9;
   min-height: 100vh;
   /* max-width: 100vw; */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -61,7 +61,6 @@ P {
   z-index: 9999;
   background-color: white;
   padding: 10px 50px;
-  border-bottom: 0.5px hsl(210, 10%, 33%) solid;
 
   display: flex;
   justify-content: space-between;
@@ -180,19 +179,19 @@ P {
     font-size: 1.44rem;
   }
 
-  button{
+  button {
     background-color: #f97415;
     border: none;
     transition: color 0.3s ease;
     border-radius: 50px;
     padding: 10px 15px;
 
-    img{
+    img {
       width: 26px;
     }
   }
 
-  button:hover{
+  button:hover {
     transform: scale(1.04);
     cursor: pointer;
     background-color: #f07218;
@@ -260,4 +259,114 @@ P {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 20px;
+  width: 100%;
+}
+
+.menu .food {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: white;
+  transition: img ease-out 0.4s;
+
+  img {
+    /* margin-bottom: 20px; */
+    border-radius: 30px 30px 0 0;
+  }
+
+  .description {
+    height: 80%;
+    padding: 20px;
+
+    p {
+      color: black;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  .pricing {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    p {
+      color: #f97415;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  .btn {
+    background-color: #f97415;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease-in-out;
+    padding: 9px 18px;
+    border-radius: 13px;
+    /* gap: 8px; */
+    width: 33%;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: #f07218;
+    transform: scale(1.04);
+  }
+}
+
+.menu .food:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+/* Footer section starts here */
+footer {
+  background-color: white;
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  img {
+    max-width: 40px;
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(95%) saturate(3046%)
+      hue-rotate(12deg) brightness(97%) contrast(101%);
+    cursor: pointer;
+    transform: scale(1.04);
+  }
+
+  .socials {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 }
