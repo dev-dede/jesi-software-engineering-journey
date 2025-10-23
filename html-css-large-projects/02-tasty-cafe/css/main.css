@@ -148,14 +148,14 @@ P {
   }
 
   .big {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 30px;
     max-width: 100%;
   }
 
   .small {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 280;
   }
 }
@@ -317,11 +317,11 @@ P {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     transition: background-color 0.3s ease-in-out;
     padding: 9px 18px;
     border-radius: 13px;
-    /* gap: 8px; */
+    gap: 8px;
     width: 33%;
 
     span {
