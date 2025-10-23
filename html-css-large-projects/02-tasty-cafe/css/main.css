@@ -323,7 +323,7 @@ P {
     transition: background-color 0.3s ease-in-out;
     padding: 9px 18px;
     border-radius: 13px;
-    gap: 8px;
+    gap: 12px;
     width: 33%;
 
     span {
