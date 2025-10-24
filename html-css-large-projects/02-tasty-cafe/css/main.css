@@ -129,10 +129,10 @@ P {
   background-size: cover;
   background-position: center;
   z-index: 1;
-  height: 75vh;
+  height: 85vh;
   width: 100%;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -145,30 +145,32 @@ P {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(44, 43, 43, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
 
 .hero-content {
   z-index: 2;
   text-align: center;
-  margin-bottom: 50px;
-  width: 55%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: 90%;
 
   p {
     color: white;
   }
 
   .big {
-    font-size: 4rem;
+    font-size: 2.3rem;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 100%;
   }
 
   .small {
-    font-size: 1.5rem;
-    font-weight: 280;
+    font-size: 1rem;
+    font-weight: 330;
+    line-height: 1.2rem;
   }
 }
 
@@ -178,17 +180,17 @@ P {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  width: 50%;
-  padding: 12px;
+  width: 90%;
+  padding: 10px 19px;
   border-radius: 35px;
   overflow: hidden;
-  gap: 10px;
+  gap: 15px;
 
   input {
     outline: none;
     border: none;
     flex: 1;
-    font-size: 1.44rem;
+    font-size: 0.9rem;
   }
 
   button {
@@ -196,10 +198,10 @@ P {
     border: none;
     transition: color 0.3s ease;
     border-radius: 50px;
-    padding: 10px 15px;
+    padding: 5px 9px;
 
     img {
-      width: 26px;
+      width: 18px;
     }
   }
 
@@ -211,22 +213,31 @@ P {
 }
 
 /* Explore section starts here */
+.explore {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+}
+
 .explore .foods {
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  display: none;
+  gap: 20px;
+  display: flex;
 }
 
 .explore .food {
   position: relative;
   overflow: hidden;
-  width: 25%;
-  height: 303px;
+  width: 100%;
+  height: 200px;
   border-radius: 5%;
-  transition: transform 0.2s ease-out;
+  /* transition: transform 0.2s ease-out; */
 
   img {
     object-fit: cover;
@@ -252,22 +263,22 @@ P {
   z-index: 1;
 }
 
-.food-name {
+.explore .food-name {
   position: absolute;
   bottom: 15px;
   left: 15px;
   z-index: 2;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
 }
 
 .food:hover img {
   cursor: pointer;
-  transform: scale(1.08) translateY(-8px);
+  transform: scale(1.1) translateY(-2px);
 }
 
-.food:hover {
+.explore .food:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -555,6 +566,271 @@ footer {
 }
 /* Responsiveness for nav bar ends here */
 
+/* Responsiveness for Hero section */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-content {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 90%;
+
+    .big {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    .small {
+      font-size: 1.35rem;
+      font-weight: 330;
+      line-height: 1.4rem;
+      margin-bottom: 5px;
+    }
+  }
+
+  .search-bar {
+    width: 75%;
+    padding: 10px 19px;
+    gap: 15px;
+
+    input {
+      flex: 1;
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 5px 9px;
+
+      img {
+        width: 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .hero-content {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 90%;
+
+    .big {
+      font-size: 3.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    .small {
+      font-size: 1.5rem;
+      font-weight: 330;
+      line-height: 1.4rem;
+      margin-bottom: 5px;
+    }
+  }
+
+  .search-bar {
+    width: 65%;
+    padding: 10px 19px;
+    gap: 15px;
+
+    input {
+      flex: 1;
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 5px 9px;
+
+      img {
+        width: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .hero-content {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 90%;
+
+    .big {
+      font-size: 3.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    .small {
+      font-size: 1.5rem;
+      font-weight: 330;
+      line-height: 1.4rem;
+      margin-bottom: 5px;
+    }
+  }
+
+  .search-bar {
+    width: 55%;
+    padding: 10px 19px;
+    gap: 15px;
+
+    input {
+      flex: 1;
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 5px 9px;
+
+      img {
+        width: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .hero-content {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 90%;
+
+    .big {
+      font-size: 5rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+
+    .small {
+      font-size: 2rem;
+      font-weight: 330;
+      line-height: 1.4rem;
+      margin-bottom: 40px;
+    }
+  }
+
+  .search-bar {
+    width: 50%;
+    padding: 12px 18px;
+    gap: 15px;
+
+    input {
+      flex: 1;
+      font-size: 1.8rem;
+    }
+
+    button {
+      padding: 10px 15px;
+
+      img {
+        width: 35px;
+      }
+    }
+  }
+}
+
+/* Responsiveness for Hero section ends here */
+
+/* Responsiveness for explore section */
+@media (min-width: 481px) and (max-width: 768px) {
+  .explore .foods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 90vw;
+  }
+
+  .explore .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.3rem;
+  }
+
+  .explore .food {
+    max-height: 220px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .explore .foods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 90vw;
+  }
+
+  .explore .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.3rem;
+  }
+
+  .explore .food {
+    max-height: 400px;
+    min-height: 300px;
+  }
+
+  .explore {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .explore .foods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 95vw;
+  }
+
+  .explore .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.5rem;
+  }
+
+  .explore .food {
+    min-height: 270px;
+    max-height: 275px;
+  }
+
+  .explore {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .explore .foods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 95vw;
+  }
+
+  .explore .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.5rem;
+  }
+
+  .explore .food {
+    min-height: 250px;
+    max-height: 255px;
+  }
+
+  .explore {
+    margin-top: 120px;
+  }
+}
+
+/* Responsiveness for explore section ends here */
+
 /* Responsiveness for menu section */
 @media (min-width: 481px) and (max-width: 768px) {
   .menu .foods {
@@ -562,7 +838,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 20px;
-    width: 85vw;
+    width: 90vw;
   }
 
   .menu .food .description {
@@ -594,7 +870,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 25px;
-    width: 90vw;
+    width: 95vw;
   }
 
   .menu .food .description {
@@ -603,7 +879,7 @@ footer {
     }
   }
 
-  .menu .food .pricing p{
+  .menu .food .pricing p {
     font-size: 1.5rem;
   }
 
@@ -611,7 +887,7 @@ footer {
     padding: 10px 12px;
   }
 
-  .menu .food .pricing .btn span{
+  .menu .food .pricing .btn span {
     font-size: 1.1rem;
   }
 }
@@ -622,7 +898,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 30px;
-    width: 90vw;
+    width: 95vw;
   }
 
   .menu .food .description {
@@ -635,10 +911,9 @@ footer {
     padding: 10px 12px;
   }
 
-  .menu .food .pricing .btn span{
+  .menu .food .pricing .btn span {
     font-size: 1.3rem;
   }
-
 }
 /* Responsiveness for menu section ends here */
 
