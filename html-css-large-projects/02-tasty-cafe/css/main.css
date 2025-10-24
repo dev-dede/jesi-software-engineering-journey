@@ -10,6 +10,10 @@ body {
   min-height: 100vh;
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -30,7 +34,7 @@ li {
 }
 
 .heading {
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +132,7 @@ P {
   height: 75vh;
   width: 100%;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -213,6 +217,7 @@ P {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  display: none;
 }
 
 .explore .food {
@@ -269,42 +274,48 @@ P {
 
 /* Menu section starts here */
 .menu {
-  /* max-width: 100%; */
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
 }
 
 .menu .foods {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   width: 100%;
+  margin-bottom: 40px;
+  background-color: #fbfaf9;
 }
 
 .menu .food {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 5%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  border-radius: 30px;
   background-color: white;
 
   img {
     border-radius: 30px 30px 0 0;
     transition: transform 0.2s ease-out;
     width: 100%;
-    height: 100%;
     object-fit: cover;
   }
 
   .description {
-    height: 80%;
-    padding: 20px;
+    padding: 10px;
 
     p {
       color: black;
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       font-weight: 600;
+      margin-bottom: 0;
     }
   }
 
@@ -313,11 +324,11 @@ P {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 10px 0;
 
     p {
       color: #f97415;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 700;
     }
   }
@@ -327,20 +338,20 @@ P {
     color: white;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: center;
     transition: background-color 0.3s ease-in-out;
-    padding: 9px 18px;
+    padding: 8px 10px;
     border-radius: 13px;
-    gap: 8px;
-    width: 33%;
+    gap: 15px;
 
     span {
-      font-size: 1.2rem;
-      font-weight: 600;
+      font-size: 0.92rem;
+      font-weight: 900;
     }
 
     img {
-      width: 30px;
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -543,6 +554,93 @@ footer {
   }
 }
 /* Responsiveness for nav bar ends here */
+
+/* Responsiveness for menu section */
+@media (min-width: 481px) and (max-width: 768px) {
+  .menu .foods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 85vw;
+  }
+
+  .menu .food .description {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .menu .foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 90vw;
+  }
+
+  .menu .food .description {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .menu .foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    width: 90vw;
+  }
+
+  .menu .food .description {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .menu .food .pricing p{
+    font-size: 1.5rem;
+  }
+
+  .menu .food .btn {
+    padding: 10px 12px;
+  }
+
+  .menu .food .pricing .btn span{
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  .menu .foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 90vw;
+  }
+
+  .menu .food .description {
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .menu .food .btn {
+    padding: 10px 12px;
+  }
+
+  .menu .food .pricing .btn span{
+    font-size: 1.3rem;
+  }
+
+}
+/* Responsiveness for menu section ends here */
 
 /* Responsiveness for Footer */
 @media (min-width: 1025px) {

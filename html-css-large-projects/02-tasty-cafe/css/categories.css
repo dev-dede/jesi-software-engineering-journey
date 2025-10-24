@@ -157,7 +157,7 @@ body {
 
   .categories .food {
     height: 410px;
-    max-height: 440px;
+    /* max-height: 440px; */
   }
 
   .categories {
