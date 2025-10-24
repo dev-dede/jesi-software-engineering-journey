@@ -41,15 +41,15 @@ li {
 
 h2 {
   color: black;
-  font-weight: 900;
-  font-size: 3rem;
+  font-weight: 700;
+  font-size: 2.05rem;
   margin-bottom: 20px;
 }
 
 P {
   color: #7c716a;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 /* Universal styling ends here */
 
@@ -383,3 +383,26 @@ P {
     font-weight: 400;
   }
 } */
+
+/* RESPONSIVENESSSSSSSSSSSSSSSSSS */
+/* Responsiveness for text */
+@media (min-width: 481px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}

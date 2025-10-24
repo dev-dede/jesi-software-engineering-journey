@@ -82,17 +82,6 @@ body {
     width: clamp(70px, 15%, 100px);
     height: auto;
   }
-
-  h2 {
-    font-size: 2.05rem;
-    font-weight: 700;
-  }
-
-  p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-bottom: 40px;
-  }
 }
 
 .heading {
@@ -207,14 +196,6 @@ footer {
 
 /* Responsive design */
 @media (min-width: 481px) {
-  .order {
-    width: 85%;
-
-    h2 {
-      font-size: 3rem;
-    }
-  }
-
   .contact-form {
     padding: 40px 30px;
   }
@@ -243,12 +224,6 @@ footer {
 }
 
 @media (min-width: 1025px) {
-  .order {
-    h2 {
-      font-size: 4rem;
-    }
-  }
-
   .all label {
     font-weight: 500;
     font-size: 1.3rem;
@@ -384,7 +359,7 @@ footer {
 
 /* Responsiveness for Footer */
 @media (min-width: 1025px) {
-    /* Footer section */
+  /* Footer section */
   footer {
     gap: 20px;
     height: 25vh;
