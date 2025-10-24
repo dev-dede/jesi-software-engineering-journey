@@ -129,7 +129,7 @@ P {
   background-size: cover;
   background-position: center;
   z-index: 1;
-  height: 85vh;
+  height: 65vh;
   width: 100%;
 
   display: flex;
@@ -570,7 +570,7 @@ footer {
 @media (min-width: 481px) and (max-width: 768px) {
   .hero-content {
     margin-bottom: 30px;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 90%;
 
     .big {
@@ -611,7 +611,7 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
   .hero-content {
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
     width: 90%;
 
     .big {
