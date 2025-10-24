@@ -5,7 +5,7 @@ body {
   flex-direction: column;
 }
 
-/* Navbar styling */
+/* Navbar styling  starts here*/
 .nav-bar {
   position: fixed;
   left: 0;
@@ -44,22 +44,20 @@ body {
   height: 20px;
 }
 
+/* Nav links */
 .nav-links {
   display: none;
 }
 
-/* .nav-links {
-  width: 30%;
-}
-
 .nav-links ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  gap: 20px;
 
   li a {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 550;
   }
 
@@ -68,7 +66,8 @@ body {
     padding: 10px;
     color: white;
     border-radius: 10px;
-  } */
+  }
+}
 /* Navbar ends here */
 
 .order {
@@ -166,6 +165,8 @@ select:focus {
   border: 3px #f97415 solid;
 }
 
+/* Footer starts here */
+
 footer {
   background-color: white;
   height: 20vh;
@@ -202,6 +203,8 @@ footer {
   }
 }
 
+/* Footer ends here */
+
 /* Responsive design */
 @media (min-width: 481px) {
   .order {
@@ -237,7 +240,41 @@ footer {
     font-size: 1.2rem;
     border-radius: 12px;
   }
+}
 
+@media (min-width: 1025px) {
+  .order {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .all label {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  .all input,
+  .all textarea,
+  .all select {
+    padding: 15px;
+  }
+
+  .all input,
+  .all textarea,
+  .all select {
+    font-size: 1.1rem;
+  }
+
+  .order button {
+    padding: 12px 10px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+  }
+}
+
+/* Responsiveness for Navbar */
+@media (min-width: 481px) and (max-width: 768px) {
   /* Hamburger menu */
   .hamburger {
     display: none;
@@ -247,77 +284,9 @@ footer {
   .nav-links {
     display: block;
   }
-
-  .nav-links ul {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
-
-    li a {
-      color: black;
-      font-size: 1.1rem;
-      font-weight: 550;
-    }
-
-    a:hover {
-      background-color: #f97415;
-      padding: 10px;
-      color: white;
-      border-radius: 10px;
-    }
-  }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-  /* Hamburger menu */
-  .hamburger {
-    display: none;
-  }
-
-  .nav-links {
-    display: block;
-  }
-
-  /* Navbar */
-  .nav-bar {
-    padding: 15px 25px;
-
-    h1 {
-      font-weight: 750;
-      font-size: 1.5rem;
-    }
-  }
-
-  .nav-logo {
-    gap: 10px;
-  }
-
-  .img-logo {
-    padding: 9px;
-  }
-
-  .img-logo img {
-    width: 27px;
-    height: 27px;
-  }
-
-  .nav-links ul {
-    gap: 35px;
-
-    li a {
-      font-size: 1.3rem;
-      font-weight: 550;
-    }
-
-    a:hover {
-      padding: 10px;
-      border-radius: 10px;
-    }
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
   /* Hamburger menu */
   .hamburger {
     display: none;
@@ -411,38 +380,11 @@ footer {
     }
   }
 }
+/* Responsiveness for nav bar ends here */
 
+/* Responsiveness for Footer */
 @media (min-width: 1025px) {
-  .order {
-    h2 {
-      font-size: 4rem;
-    }
-  }
-
-  .all label {
-    font-weight: 500;
-    font-size: 1.3rem;
-  }
-
-  .all input,
-  .all textarea,
-  .all select {
-    padding: 15px;
-  }
-
-  .all input,
-  .all textarea,
-  .all select {
-    font-size: 1.1rem;
-  }
-
-  .order button {
-    padding: 12px 10px;
-    font-size: 1.2rem;
-    border-radius: 12px;
-  }
-
-  /* Footer section */
+    /* Footer section */
   footer {
     gap: 20px;
     height: 25vh;
@@ -462,3 +404,4 @@ footer {
     }
   }
 }
+/* Responsiveness for footer ends here */
