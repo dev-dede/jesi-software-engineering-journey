@@ -70,6 +70,8 @@ P {
   justify-content: space-between;
   align-items: center;
 
+  transition: backdrop-filter 0.3s, background-color 0.3s;
+
   h1 {
     color: #f97415;
     font-weight: 650;
@@ -118,6 +120,13 @@ P {
     color: white;
     border-radius: 10px;
   }
+}
+
+/* When scrolled */
+nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  backdrop-filter: blur(10px); /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
 }
 /* Navbar ends here */
 
@@ -569,7 +578,7 @@ footer {
 /* Responsiveness for Hero section */
 @media (min-width: 481px) and (max-width: 768px) {
   .hero {
-    height: 60vh;
+    height: 80vh;
   }
   .hero-content {
     margin-bottom: 30px;
