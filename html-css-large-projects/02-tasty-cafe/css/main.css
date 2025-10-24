@@ -8,7 +8,6 @@
 body {
   background-color: #fbfaf9;
   min-height: 100vh;
-  /* max-width: 100vw; */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
@@ -27,11 +26,11 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 30px;
+  margin: 30px 25px;
 }
 
 .heading {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +47,7 @@ h2 {
 
 P {
   color: #7c716a;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.1rem;
 }
 /* Universal styling ends here */
@@ -385,15 +384,23 @@ P {
 } */
 
 /* RESPONSIVENESSSSSSSSSSSSSSSSSS */
-/* Responsiveness for text */
+/* Responsiveness for universal styles */
 @media (min-width: 481px) {
   h2 {
     font-size: 3rem;
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
+  }
+
+  .heading {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    margin: 30px 25px;
   }
 }
 
@@ -402,7 +409,15 @@ P {
     font-size: 4rem;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
+  }
+
+  .heading {
+    margin-bottom: 15px;
+  }
+
+  .container {
+    margin: 30px 25px;
   }
 }
