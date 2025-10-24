@@ -26,7 +26,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px 25px;
+  margin: 30px 20px;
 }
 
 .heading {
@@ -52,15 +52,15 @@ P {
 }
 /* Universal styling ends here */
 
-/* Nav bar */
-/* .nav-bar {
+/* Navbar styling  starts here*/
+.nav-bar {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 9999;
   background-color: white;
-  padding: 10px 50px;
+  padding: 10px 20px;
 
   display: flex;
   justify-content: space-between;
@@ -68,7 +68,8 @@ P {
 
   h1 {
     color: #f97415;
-    font-weight: 900;
+    font-weight: 650;
+    font-size: 1.1rem;
   }
 }
 
@@ -82,21 +83,28 @@ P {
 .img-logo {
   background-color: #f97415;
   border-radius: 100%;
-  padding: 10px;
+  padding: 6px;
 }
 
+.img-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Nav links */
 .nav-links {
-  width: 30%;
+  display: none;
 }
 
 .nav-links ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  gap: 20px;
 
   li a {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 550;
   }
 
@@ -106,8 +114,8 @@ P {
     color: white;
     border-radius: 10px;
   }
-} */
-/* Nav bar ends here */
+}
+/* Navbar ends here */
 
 /* Hero starts here */
 .hero {
@@ -348,18 +356,20 @@ P {
   transform: scale(1.004) translateY(-4px);
 }
 
-/* Footer section starts here */
-/* footer {
+/* Footer starts here */
+
+footer {
   background-color: white;
-  height: 18vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 
   img {
+    width: 25px;
     max-width: 40px;
     transition: transform 0.3s ease;
   }
@@ -373,15 +383,18 @@ P {
 
   .socials {
     display: flex;
-    width: 15%;
+    width: 55%;
+    max-width: 300px;
     justify-content: space-between;
   }
 
   p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
-} */
+}
+
+/* Footer ends here */
 
 /* RESPONSIVENESSSSSSSSSSSSSSSSSS */
 /* Responsiveness for universal styles */
@@ -421,3 +434,136 @@ P {
     margin: 30px 25px;
   }
 }
+
+/* Responsiveness for Navbar */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+  }
+
+  /* Nav links */
+  .nav-links {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  /* Navbar */
+  .nav-bar {
+    padding: 15px 25px;
+
+    h1 {
+      font-weight: 750;
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav-logo {
+    gap: 10px;
+  }
+
+  .img-logo {
+    padding: 9px;
+  }
+
+  .img-logo img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .nav-links ul {
+    gap: 35px;
+
+    li a {
+      font-size: 1.3rem;
+      font-weight: 550;
+    }
+
+    a:hover {
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  /* Navbar */
+  .nav-bar {
+    padding: 15px 25px;
+
+    h1 {
+      font-weight: 750;
+      font-size: 2rem;
+    }
+  }
+
+  .nav-logo {
+    gap: 13px;
+  }
+
+  .img-logo {
+    padding: 13px;
+  }
+
+  .img-logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-links ul {
+    gap: 40px;
+
+    li a {
+      font-size: 1.8rem;
+    }
+
+    a:hover {
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
+/* Responsiveness for nav bar ends here */
+
+/* Responsiveness for Footer */
+@media (min-width: 1025px) {
+  /* Footer section */
+  footer {
+    gap: 20px;
+    height: 25vh;
+    gap: 20px;
+
+    img {
+      width: 35px;
+      max-width: 50px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .socials {
+      width: 15%;
+    }
+  }
+}
+/* Responsiveness for footer ends here */
