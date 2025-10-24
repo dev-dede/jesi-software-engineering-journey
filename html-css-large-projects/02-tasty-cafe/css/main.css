@@ -129,7 +129,7 @@ P {
   background-size: cover;
   background-position: center;
   z-index: 1;
-  height: 65vh;
+  height: 50vh;
   width: 100%;
 
   display: flex;
@@ -568,6 +568,9 @@ footer {
 
 /* Responsiveness for Hero section */
 @media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
   .hero-content {
     margin-bottom: 30px;
     margin-top: 20px;
@@ -609,6 +612,9 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .hero {
+    height: 70vh;
+  }
   .hero-content {
     margin-bottom: 20px;
     margin-top: 50px;
@@ -650,6 +656,9 @@ footer {
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .hero {
+    height: 75vh;
+  }
   .hero-content {
     margin-bottom: 20px;
     margin-top: 40px;
@@ -691,6 +700,9 @@ footer {
 }
 
 @media (min-width: 1281px) {
+  .hero {
+    height: 85vh;
+  }
   .hero-content {
     margin-bottom: 20px;
     margin-top: 40px;
