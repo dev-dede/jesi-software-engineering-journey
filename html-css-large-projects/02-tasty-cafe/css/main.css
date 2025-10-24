@@ -36,6 +36,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 h2 {
@@ -53,7 +54,7 @@ P {
 /* Universal styling ends here */
 
 /* Nav bar */
-.nav-bar {
+/* .nav-bar {
   position: fixed;
   left: 0;
   top: 0;
@@ -106,7 +107,7 @@ P {
     color: white;
     border-radius: 10px;
   }
-}
+} */
 /* Nav bar ends here */
 
 /* Hero starts here */
@@ -323,7 +324,7 @@ P {
     transition: background-color 0.3s ease-in-out;
     padding: 9px 18px;
     border-radius: 13px;
-    gap: 12px;
+    gap: 8px;
     width: 33%;
 
     span {
@@ -349,7 +350,7 @@ P {
 }
 
 /* Footer section starts here */
-footer {
+/* footer {
   background-color: white;
   height: 18vh;
   width: 100%;
@@ -381,4 +382,4 @@ footer {
     font-size: 1.6rem;
     font-weight: 400;
   }
-}
+} */
