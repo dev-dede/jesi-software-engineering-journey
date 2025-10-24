@@ -14,25 +14,19 @@ body {
   align-items: center;
 }
 
-/* .categories .foods {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
-  width: 100%;
-} */
-
 .categories .foods {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .categories .food {
   position: relative;
   overflow: hidden;
-  /* height: 403px; */
   height: 200px;
   border-radius: 5%;
   width: 100%;
@@ -74,4 +68,99 @@ body {
   color: white;
   font-size: 1.2rem;
   font-weight: bolder;
+}
+
+/* Responsiveness */
+@media (min-width: 481px) and (max-width: 768px) {
+  .categories .foods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 90vw;
+  }
+
+  .categories .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.3rem;
+  }
+
+  .categories .food {
+    max-height: 220px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .categories .foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 90vw;
+  }
+
+  .categories .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.3rem;
+  }
+
+  .categories .food {
+    max-height: 220px;
+  }
+
+  .categories {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .categories .foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    width: 90vw;
+  }
+
+  .categories .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.5rem;
+  }
+
+  .categories .food {
+    height: 260px;
+    max-height: 270px;
+  }
+
+  .categories {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .categories .foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 95vw;
+  }
+
+  .categories .food-name {
+    bottom: 1px;
+    left: 15px;
+    font-size: 1.8rem;
+  }
+
+  .categories .food {
+    height: 410px;
+    max-height: 440px;
+  }
+
+  .categories {
+    margin-top: 160px;
+  }
 }

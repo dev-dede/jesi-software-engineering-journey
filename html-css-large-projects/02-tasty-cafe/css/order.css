@@ -147,3 +147,9 @@ select:focus {
     border-radius: 12px;
   }
 }
+
+@media (min-width: 769px){
+  .order{
+    margin-top: 120px;
+  }
+}
