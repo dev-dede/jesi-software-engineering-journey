@@ -124,8 +124,8 @@ P {
 
 /* When scrolled */
 nav.scrolled {
-  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent */
-  backdrop-filter: blur(10px); /* glass blur effect */
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+  backdrop-filter: blur(5px); /* glass blur effect */
   -webkit-backdrop-filter: blur(10px); /* for Safari */
 }
 /* Navbar ends here */
@@ -133,7 +133,6 @@ nav.scrolled {
 /* Hero starts here */
 .hero {
   background-image: url(../images/foods/cheese_burger.jpg);
-  object-position: center;
   position: relative;
   background-size: cover;
   background-position: center;
